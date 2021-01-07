@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <h1>Create account</h1>
+    <h2>It's free</h2>
+    <form action="/signup" method="post">
+        <div class="line-box">
+            <input type="text" name="firstName" placeholder="FirstName" />
+            <input type="text" name="surname" placeholder="Surname" />
+        </div>
+        <div class="column-box">
+            <input class="form__input" type="text" name="phone-or-email" placeholder="Email or mobile number"
+                pattern="^[0-9]{9}$ || [A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" title="Telephone or email"
+                required="required">
+            <input class="form__input" type="text" name="phone-or-email" placeholder=" Re-enter email or mobile number"
+                pattern="^[0-9]{9}$ || [A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" title="Telephone or email"
+                required="required">
+            <input type="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" placeholder="Password" />
+
+        </div>
+        <legend>Birthday</legend>
+
+        <div class="date">
+            <select class="date-1" id="day" name="day">
+                <option value="">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+
+            </select>
+            <select class="date-1" id="month" name="mont">
+                <option value="">Month</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <div class="text-1">
+                <small class="date-1">Why do I need to provide my date of birth</small>
+            </div>
+        </div>
+
+        <div class="gender">
+            <label for="gender1">
+                <input id="gender1" type="radio" value="male" name="gender" />
+                Male </label>
+
+            <label for="gender2">
+                <input id="gender2" type="radio" value="female" name="gender" />
+                Female
+            </label>
+        </div>
+        <div class="text-1">
+            <small>By clicking create an account</small>
+        </div>
+        <button class="account">Create an account</button>
+
+
+
+    </form>
+
+</html>

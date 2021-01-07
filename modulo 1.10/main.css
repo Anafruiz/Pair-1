@@ -1,0 +1,27 @@
+.column-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 350px;
+}
+.form__input,
+.line-box {
+  margin-bottom: 10px;
+}
+.date {
+  display: flex;
+  margin-bottom: 10px;
+}
+.date-1 {
+  margin-right: 10px;
+}
+.gender {
+  margin-bottom: 10px;
+}
+.text-2 {
+  width: 150px;
+}
+.text-1 {
+  margin-bottom: 10px;
+  width: 100px;
+}
